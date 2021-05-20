@@ -1,0 +1,49 @@
+/*html5 semantics tags
+article, aside, figure, footer, header, hgroup, menu, nav, section
+
+
+/* light css reset */
+* { margin : 0; padding : 0; }
+/*h2, h3, h4, h5, p, ul, ol  { margin : 0 20px; padding : .5em 0; }
+img { border: 0px;}
+
+/* =page level container */
+#container {/*Container que contem o site */
+    margin: 0px auto 0px auto;
+    width: 960px;
+    background:#CAE1FF;
+}
+
+#corpo { /*Div Corpo do site  possui a section*/
+    margin: 1px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    height: 700px;      
+}
+section { /*Div Corpo do site  possui o cabecalho do artigo, o corpo do artigo e o cabecalho*/
+    margin:0px auto 0px auto;
+    width:958px;
+    height:600px;
+    float:left;
+    background:#CAE1FF;
+    margin-left:0px;  
+}
+.artigo {
+    margin:0px auto 0px auto;
+    width:958px;
+    height:350px;
+    float:left;
+    background:#CAE1FF;
+    margin:0px;  
+}
+.txtarea {/*Define a altura do input*/
+    /*background-color:#B0E0E6;*/
+    height: 40px;
+    font: 18px georgia, sans-serif;
+    color:#154ecd;
+}
+#imgpos {
+	position: absolute; 
+	right: 300px; /* posiciona a 90px para a esquerda */ 
+	top: 10px; /* posiciona a 70px para baixo */
+	}

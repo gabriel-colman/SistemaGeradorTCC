@@ -1,0 +1,138 @@
+<!DOCTYPE html!>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <script src="js/gerarJSON.js"></script>
+        <script src="js/limpar.js"></script>
+    
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="corpo">
+            <section>
+                <article class="artigo">
+                    <form method="POST">
+                        <!--Selecione o Logo do Grupo de Pesquisa<br> -->
+                       
+
+                        <input type="hidden" name="operacao" value="incluir">
+                        <table border="0">
+                            <tr>
+                                <td width="960" height="20"></br>
+                                    <font color="#154ecd" size="5">&nbsp; Formulario</font>
+                                </td>
+                            </tr>
+                        </table></br>
+                        <hr
+                            style='width: 100%; height:5px; text-align:center; border:0px; color:#154ecd; background:#154ecd;' />
+                        </br>
+                        <table border="0">
+                            <tr>
+                                <td width="330" height="20">
+                                    <font color="#154ecd" size="4"> &nbsp; Nome: </font>
+                                    <font color="red" size="4">*</font>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td width="330" height="20">
+                                    &nbsp;<input type="text" name="nome" size="35" class="txtarea" id="nomeGrupo">
+
+                                </td>
+                            </tr>
+
+                            <table border="0"></br>
+                                <tr>
+                                    <td width="960" height="20">
+                                        <font color="#154ecd" size="4"> &nbsp;Texto Bem Vindo: </font>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0">
+                                <tr>
+                                    <td width="6" height="20">
+                                    <td>
+                                    <td width="330" height="20">
+                                        <label>
+                                            <textarea name="textoBemVindo" id="textarea" cols="114" rows="5" id="textoBemVindo" ></textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table></br>
+
+                            <table border="0"></br>
+                                <tr>
+                                    <td width="960" height="20">
+                                        <font color="#154ecd" size="4"> &nbsp;Missão: </font>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0">
+                                <tr>
+                                    <td width="6" height="20">
+                                    <td>
+                                    <td width="330" height="20">
+                                        <label>
+                                            <textarea name="missao" id="textarea" cols="114" rows="5" id="missao" ></textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table></br>
+
+                            <table border="0"></br>
+                                <tr>
+                                    <td width="960" height="20">
+                                        <font color="#154ecd" size="4"> &nbsp;Interesses de Pesquisa: </font>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0">
+                                <tr>
+                                    <td width="6" height="20">
+                                    <td>
+                                    <td width="330" height="20">
+                                        <label>
+                                            <textarea name="interessesDePesquisa" id="textarea" cols="114"
+                                                rows="5" id="interessesDePesquisa" ></textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table></br>
+
+                            
+                            
+                           <!-- <input type="file" name="ImagenWeb" value="" width="40" /> -->
+                            <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48" id="imgpos"> 
+                            <br> <br>
+
+                            <table border="0">
+                                <tr>
+                                    <td width="420" height="50"> ( * ) Campos obrigatórios </td>
+                                </tr>
+                                <div class="text-center">
+                                    <button id="gerar" onclick="gerarJSON()" 
+                                        class="btn btn-primary text-center" type="button">
+                                        Avançar
+                                    </button>
+                                    <button id="exibir" onclick="exibirJSON()" 
+                                        class="btn btn-primary text-center" type="button">
+                                        Exibir JSON
+                                    </button>
+                                    <button onclick="limpar()" class="btn btn-primary text-center" type="button">
+                                        Limpar
+                                    </button>
+                            </table>
+                    </form>
+                </article>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>
